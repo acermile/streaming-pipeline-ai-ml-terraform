@@ -35,6 +35,8 @@ resource "null_resource" "dataflow-flex-template" {
 
   }
 
+  depends_on = [null_resource.dataflow-flex-template-gcr-image]
+
 }
 
 
