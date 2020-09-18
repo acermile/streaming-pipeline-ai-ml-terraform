@@ -1,4 +1,4 @@
-# Google Cloud DataFlow Streaming Pipeline
+# Google Cloud DataFlow (Flex template) Streaming Pipeline
 
 This terraform reference code will run a streaming pipeline. It will read messages from a Pub/Sub topic, then window them into fixed-sized intervals, after that, it will call the Prediction API, once it gets the results, will write them into BigQuery.
 
