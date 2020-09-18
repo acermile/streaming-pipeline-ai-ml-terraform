@@ -36,3 +36,13 @@ resource "null_resource" "dataflow-flex-template" {
   }
 
 }
+
+
+//make sure you have the git, gcloud sdk  installed on the local machine you running the terraform from.
+resource "null_resource" "dataflow-flex-template-gcr-image" {
+  provisioner "local-exec" {
+    command = "cd ~ && git clone https://github.com/acermile/dataflow-flex-template-twitter-streaming.git && cd dataflow-flex-template-twitter-streaming &&  gcloud builds submit --tag gcr.io/cloudarchitectexam/samples/dataflow/pubsubtobigquerywithapiplatform:latest"
+
+  }
+
+}
