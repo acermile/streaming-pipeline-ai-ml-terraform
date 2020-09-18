@@ -5,3 +5,5 @@ This terraform reference code will run a streaming pipeline. It will read messag
 AI model training and model deployment is outside the scope of this terraform project as it doesnt support the google beta APIs for model version deployment.
 
 you can refer https://github.com/GoogleCloudPlatform/ai-platform-samples/blob/master/notebooks/samples/tensorflow/sentiment_analysis/ai_platform_sentiment_analysis.ipynb
+
+<img src= "/pipeline.png">
